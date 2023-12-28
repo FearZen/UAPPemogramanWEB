@@ -48,11 +48,12 @@
         </tr>
         <tr>
             <td>
-                <button onclick="cariBarang()">Submit</button>
+                <button onclick="addTask()">Submit</button>
     
             </td>
         </tr>
     </table>
+    <script>script.js</script>
 <script>
     function check(){
         if (jumlahbarang>jumlahuang)
@@ -62,7 +63,9 @@
         kodebarang+jumlahbarang
     }
     function cariBarang(){
+        check()
         window.alert("Total pembayaran anda adalah:")
+        window.prompt($total)
     }
     function bayar(){
         window.prompt(cariBarang)
